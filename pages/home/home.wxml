@@ -1,3 +1,18 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello world!</text>
-<button size="mini">按钮</button>
+<!-- 小程序数据绑定，mustache语法 -->
+<!-- 在js文件data中定义变量 -->
+<view>
+  {{name}}
+  {{age}}
+</view>
+<!-- 列表展示wx-for -->
+<view wx:for="{{students}}">
+  {{item.name}}
+</view>
+<!-- 事件监听 -->
+<view>
+  当前计数：
+  <button size="mini" bindtap="handleBtnClick">-</button>
+  {{counter}}
+  <button size="mini" bindtap="handleBtnClick">+</button>
+</view>
