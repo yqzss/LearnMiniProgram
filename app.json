@@ -10,20 +10,24 @@
     "navigationBarTitleText": "购物街",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "selectedColor": "#ff5777",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "assets/tabbar/home.png",
-      "selectedIconPath": "assets/tabbar/home_active.png"
-    },{
-      "pagePath": "pages/category/category",
-      "text": "详情",
-      "iconPath": "assets/tabbar/category.png",
-      "selectedIconPath": "assets/tabbar/category_active.png"
-    }]
-  }
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "详情",
+        "iconPath": "assets/tabbar/category.png",
+        "selectedIconPath": "assets/tabbar/category_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }
